@@ -7,14 +7,14 @@ class Team:
         self.points = 0
 
 #methods below
-    def add_player(self, players, name):
-        players.append(name)
+    def add_player(self, name):
+        self.players.append(name)
 
-    def has_player(self, players, name):
-        for player in players:
+    def has_player(self, name):
+        for player in self.players:
             if player == name:
                 return True
-            else: return False
+            else: continue
 
     def play_game(self, game_result):
         if game_result == True:
