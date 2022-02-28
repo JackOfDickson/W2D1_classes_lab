@@ -1,8 +1,7 @@
 class Student:
-    def __init__(self, input_name, input_cohort, input_fav_language):
+    def __init__(self, input_name, input_cohort):
         self.name = input_name
         self.cohort = input_cohort
-        self.fav_language = input_fav_language
 #Creating methods
     def talk(self):
         print("I can talk!")
